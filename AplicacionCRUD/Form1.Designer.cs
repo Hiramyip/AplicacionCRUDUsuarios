@@ -34,6 +34,8 @@
             btnDelete = new Button();
             txtNombre = new TextBox();
             txtPuntos = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)dtgUsuarios).BeginInit();
             SuspendLayout();
             // 
@@ -55,53 +57,73 @@
             // 
             // btnCreate
             // 
-            btnCreate.Location = new Point(330, 82);
+            btnCreate.Location = new Point(330, 113);
             btnCreate.Name = "btnCreate";
             btnCreate.Size = new Size(94, 29);
             btnCreate.TabIndex = 1;
-            btnCreate.Text = "button1";
+            btnCreate.Text = "insertar";
             btnCreate.UseVisualStyleBackColor = true;
             btnCreate.Click += btnCreate_Click;
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(330, 117);
+            btnUpdate.Location = new Point(330, 148);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(94, 29);
             btnUpdate.TabIndex = 2;
-            btnUpdate.Text = "button1";
+            btnUpdate.Text = "actualizar";
             btnUpdate.UseVisualStyleBackColor = true;
             btnUpdate.Click += btnUpdate_Click;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(330, 152);
+            btnDelete.Location = new Point(330, 183);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(94, 29);
             btnDelete.TabIndex = 3;
-            btnDelete.Text = "button1";
+            btnDelete.Text = "eliminar";
             btnDelete.UseVisualStyleBackColor = true;
             btnDelete.Click += btnDelete_Click;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(330, 49);
+            txtNombre.Location = new Point(330, 24);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(94, 27);
             txtNombre.TabIndex = 4;
             // 
             // txtPuntos
             // 
-            txtPuntos.Location = new Point(451, 49);
+            txtPuntos.Location = new Point(330, 80);
             txtPuntos.Name = "txtPuntos";
-            txtPuntos.Size = new Size(103, 27);
+            txtPuntos.Size = new Size(94, 27);
             txtPuntos.TabIndex = 5;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(330, 1);
+            label1.Name = "label1";
+            label1.Size = new Size(64, 20);
+            label1.TabIndex = 6;
+            label1.Text = "Nombre";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(330, 54);
+            label2.Name = "label2";
+            label2.Size = new Size(53, 20);
+            label2.TabIndex = 7;
+            label2.Text = "Puntos";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(662, 255);
+            ClientSize = new Size(455, 255);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(txtPuntos);
             Controls.Add(txtNombre);
             Controls.Add(btnDelete);
@@ -125,5 +147,7 @@
         private TextBox txtNombre;
         private TextBox txtPuntos;
         private TextBox textBox1;
+        private Label label1;
+        private Label label2;
     }
 }

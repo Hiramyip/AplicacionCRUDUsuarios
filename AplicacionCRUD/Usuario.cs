@@ -10,8 +10,8 @@ namespace AplicacionCRUD
 {
     internal class Usuario
     {
-        [BsonId] // Esto indica que es la llave primaria de MongoDB
-        [BsonRepresentation(BsonType.ObjectId)] // Permite manejarlo como string en C#
+        [BsonId] 
+        [BsonRepresentation(BsonType.ObjectId)] 
         public string Id { get; set; }
 
         public string Nombre { get; set; }
